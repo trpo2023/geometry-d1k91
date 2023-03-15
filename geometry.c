@@ -217,7 +217,12 @@ int main()
             return 4;
         }
         printf("%s", object);
-        printf("x = %f\ny = %f\nradius = %f\n", x_num, y_num, radius_num);
+        printf("x = %f\ny = %f\nradius = %f\nperimeter = %f\nsquare = %f",
+               x_num,
+               y_num,
+               radius_num,
+               2 * radius_num * pi,
+               pi * radius_num*radius_num);
     }
 
     else {
