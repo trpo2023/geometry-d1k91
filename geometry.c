@@ -1,8 +1,8 @@
 #include <ctype.h>
+#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define pi 3.14159265358979323846
 
 int main()
 {
@@ -103,7 +103,7 @@ int main()
                 for (int k = 0; k < strlen(circle) + 1; k++)
                     printf(" ");
                 printf("^\n");
-                printf("Error at collum %ld: expected '<double>'\n",
+                printf("Error at collum %d: expected '<double>'\n",
                        strlen(circle) + 2);
                 return 3;
             }
@@ -145,7 +145,7 @@ int main()
                 for (int k = 0; k < strlen(circle) + indexX + 2; k++)
                     printf(" ");
                 printf("^\n");
-                printf("Error at collum %ld: expected '<double>'\n",
+                printf("Error at collum %d: expected '<double>'\n",
                        strlen(circle) + indexX + 3);
                 return 3;
             }
@@ -183,7 +183,7 @@ int main()
                 for (int k = 0; k < strlen(circle) + indexX + indexY + 4; k++)
                     printf(" ");
                 printf("^\n");
-                printf("Error at collum %ld: expected '<double>'\n",
+                printf("Error at collum %d: expected '<double>'\n",
                        strlen(circle) + indexX + indexY + 5);
                 return 3;
             }
@@ -221,8 +221,8 @@ int main()
                x_num,
                y_num,
                radius_num,
-               2 * radius_num * pi,
-               pi * radius_num*radius_num);
+               2 * radius_num * M_PI,
+               M_PI * pow(radius_num, 2));
     }
 
     else {
