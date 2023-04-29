@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <libgeometry/funcs.h>
+#include <libgeometry/functions.h>
 
 int main()
 
