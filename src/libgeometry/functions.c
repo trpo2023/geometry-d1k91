@@ -1,4 +1,4 @@
-#include "funcs.h"
+#include <functions.h>
 #include <ctype.h>
 #include <math.h>
 #include <stdio.h>
