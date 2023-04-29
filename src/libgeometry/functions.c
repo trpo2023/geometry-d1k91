@@ -119,7 +119,7 @@ void print_circles(const char* output_path, Circle* circles, int count)
 
         sprintf(output,
 
-                " circle(%f %f, %f)\n perimetr: %.3f\n square: %.3f\n ",
+                " circle(%.3f %.3f, %.3f)\n perimetr: %.3f\n square: %.3f\n ",
 
                 circles[i].x,
 
